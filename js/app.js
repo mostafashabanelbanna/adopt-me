@@ -5,8 +5,10 @@ const Pet = (props) => {
 		React.createElement('h2', {}, props.breed)
 	]);
 }
-const App = () => {
-	return React.createElement('div', {}, [
+
+class App extends React.Component {
+	render(){
+		return React.createElement('div', {}, [
 		React.createElement('h1', {}, 'adopt-me!'),
 		React.createElement(Pet, {
 			name : 'max',
@@ -19,6 +21,8 @@ const App = () => {
 			breed : 'mixed'
 		})	
 		]);
+	}
 }
+
 
 ReactDOM.render(React.createElement(App), document.getElementById('root'))
