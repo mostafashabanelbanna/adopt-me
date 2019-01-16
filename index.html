@@ -10,6 +10,13 @@
 		<div id="root">not renderd</div>
 		<script src="https://unpkg.com/react@16.4.1/umd/react.development.js"></script>
 		<script src="https://unpkg.com/react-dom@16.4.1/umd/react-dom.development.js"></script>
+		<script>
+			const App = () => {
+				return React.createElement('div', {}, React.createElement('h1', {}, 'adopt-me!'))
+			}
+
+			ReactDOM.render(React.createElement(App), document.getElementById('root'))
+		</script>
 	</body>
 </html>
 
